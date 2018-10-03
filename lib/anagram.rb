@@ -9,8 +9,8 @@ class Anagram
   def match(words)
     anag = {}
     words.each do |word|
-      anagrams[word.downcase.split('').sort.join] ||=[]
-      anagrams[word.downcase.split('').sort.join] << word
+      anag[word.downcase.split('').sort.join] ||=[]
+      anag[word.downcase.split('').sort.join] << word
     end
     anag.values
   end
