@@ -14,7 +14,7 @@ class Anagram
     # word.split("").sort == @word.split("").sort
   end
 
-  # 
+  #
   # def is_anagram?(word)
   #   word.chars.sort == @anagram.chars.sort
   # end
