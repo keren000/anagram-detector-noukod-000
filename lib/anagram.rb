@@ -5,7 +5,7 @@ class Anagram
   # def initialize(word)
   #   @word = word
   # end
-  # 
+  #
   # def match(anaword)
   #   anaword.select do |word|
   #   word.split("").sort == @word.split("").sort
@@ -15,7 +15,7 @@ class Anagram
     anagrams={}
         words.each do |word|
           anagrams[word.downcase.split('').sort.join] ||=[]
-          anagrams[word.downcase.split('').sort.join] << word 
+          anagrams[word.downcase.split('').sort.join] << word
         end
         anagrams.values
   end
