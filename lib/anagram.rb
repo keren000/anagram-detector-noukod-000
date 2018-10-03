@@ -6,9 +6,17 @@ class Anagram
   end
 
   def match(words)
-    word.select do |word|
+    words.select do |word|
+      is_anagram?(word)
+      word.chars.sort == @anagram.chars.sort
+    end
+    # word.select do |word|
     # word.split("").sort == @word.split("").sort
-    word.chars.sort == @anagram.chars.sort
   end
+
+  # 
+  # def is_anagram?(word)
+  #   word.chars.sort == @anagram.chars.sort
+  # end
 
 end
