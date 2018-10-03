@@ -10,7 +10,7 @@ class Anagram
     anag = {}
     words.each do |word|
       anagrams[word.downcase.split('').sort.join] ||=[]
-      anagrams[word.downcase.split('').sort.join] << word 
+      anagrams[word.downcase.split('').sort.join] << word
     end
     anagrams.values
   end
