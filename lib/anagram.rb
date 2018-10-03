@@ -12,6 +12,6 @@ class Anagram
       anagrams[word.downcase.split('').sort.join] ||=[]
       anagrams[word.downcase.split('').sort.join] << word
     end
-    anagrams.values
+    anag.values
   end
 end
