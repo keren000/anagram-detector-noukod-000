@@ -6,12 +6,12 @@ class Anagram
     @word = word
   end
 
-  def match(words)
-    anag = {}
-    words.each do |word|
-      anag[word.downcase.split('').sort.join] ||=[]
-      anag[word.downcase.split('').sort.join] << word
+  def match(anaword)
+    anaword.each do |word|
+    word.split("").sort == @word.split("").sort
     end
-    anag.values
   end
+
+  
+
 end
